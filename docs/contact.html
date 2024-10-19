@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Ecommerce</title>
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+</head>
+<body>
+    <div class="container">
+       <!--Header-->
+       <nav>
+        <div class="header">
+            <!-- Header Bars and Title -->
+            <div class="header__top">
+                <div class="header__top__bars"><i class="ri-menu-line"></i></div>
+                <h2 class="header__top__title"><a href="index.html">Markommerce</a></h2>
+            </div>
+
+            <!-- Header Desktop Links -->
+            <div class="header__links">
+                <ul class="header__links__list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productsPage.html">Prodotti</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Header Search, Cart, and Login -->
+            <div class="header__actions">
+                <form class="header__actions__form">
+                    <input type="text" placeholder="search..." class="header__actions__search">
+                    <button ><i class="ri-search-line"></i></button>
+                </form>
+                <button class="header__actions__whishlist">
+                        <a href="whishlist.html">
+                            <i class="ri-heart-line"></i>
+                            <div id="whishlist__amount">0</div>
+                        </a>
+                    </button>
+                    <button class="header__actions__cart">
+                        <a href="cart.html">
+                            <i class="ri-shopping-cart-2-line"></i>
+                            <div id="cart__amount">0</div>
+                        </a>
+                    </button>
+                <button class="header__actions__login"><a href="registrationPage.html"><i class="ri-user-3-line"></i></a></button>
+            </div>
+        </div>
+    </nav>
+
+        <!--aside bar-->
+        <aside>
+            <div class="sidebar">
+                <div class="sidebar__top">
+                    <p>Explore</p>
+                    <p>Markommerce</p>
+                    <a href="login.html">Login <i class="ri-user-3-line"></i></a>
+                </div>
+                <div class="sidebar__separator"></div>
+                <ul class="sidebar__links">
+                    <p>Discover website</p>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="productsPage.html">Prodotti</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="sidebar__separator"></div>
+            </div>
+        </aside>
+
+        <!--close aside btn-->
+        <button class="sidebar__close__btn"><i class="ri-close-line"></i></button>
+        
+        <main>
+            <div class="contact__container">
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <h3><i class="fa fa-phone"></i>Call To Us</h3>
+                        <p>Phone: +1 123 456 789</p>
+                        <p>Opening Hours: Mon-Fri 9am-5pm</p>
+                    </div>
+
+                    <div class="contact__item">
+                        <h3><i class="fa fa-envelope"></i>Write To Us</h3>
+                        <p>Email: info@example.com</p>
+                        <p>Address: 123 Main Street, City, Country</p>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <h2>Contact Us</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone" required>
+                        <textarea name="message" placeholder="Your Message..." required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div>
+                <div class="footer__box">
+                    <h3>Support</h3>
+                    <p>Via Cisanello 3, Pisa <br>56121, Italy</p>
+                    <p>Tel: <a href="tel:+390572198765"> +39 0572 198765</a></p>
+                    <p>Email: <a href="mailto:mKo@markommerce.com">mKo@markommerce.com</a></p>
+                </div>
+                <div class="footer__box">
+                    <h3>Account</h3>
+                    <a href="registrationPage.html">My Account</a>
+                    <a href="registrationPage.html">Login / Register</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="whishlist.html">Wishlist</a>
+                    <a href="index.html">Shop</a>
+                </div>
+                <div class="footer__box">
+                    <h3>Quick Links</h3>
+                    <p class="modal__open privacy">Privacy Policy</p>
+                    <p class="modal__open termOfUs">Terms of Use</p>
+                    <p class="modal__open faq">FAQ</p>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer__box">
+                    <h3>Download App</h3>
+                    <small>Save $3 with App - New Users Only</small>
+                    <div class="footer__box__app">
+                        <div class="app__container">
+                            <div>
+                                <img src="Img/img_footer/qrcode-placeholder.png" alt="">
+                            </div>
+                            <div>
+                                <img src="Img/img_footer/Google image.png" alt="">
+                                <img src="Img/img_footer/App store.png" alt="">
+                            </div>
+                        </div>
+                        <div class="footer__box__social">
+                            <a href=""><i class="fa fa-facebook"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-instagram"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="section__separator"></div>
+
+        <!--background black cover when open aside-->
+         <div id="background__cover"></div>
+
+        <!--Pivacy policy modal-->
+        <dialog class="modal" id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>This Privacy Policy aims to describe the methods of managing the processing of personal data of users interacting with our e-commerce website, in accordance with the General Data Protection Regulation (GDPR - EU Regulation 2016/679).</p>
+        
+            <h3>1. Data Controller</h3>
+            <p>The data controller is Markommerce, with registered office at Via Cisanello 3, Pisa 56121, Italy. For any request regarding the protection of personal data, you can contact us at: mKo@markommerce.com.</p>
+        
+            <h3>2. Types of Data Collected</h3>
+            <p>During the use of our e-commerce, we may collect different types of personal data, including:</p>
+            <ul>
+              <li>Identification data (name, surname, email address, home/shipping address);</li>
+              <li>Contact data (phone number, email address);</li>
+              <li>Payment data (credit card information or other payment methods);</li>
+              <li>Navigation data (IP address, browser type, browsing data);</li>
+              <li>Purchase data (purchased products, completed orders);</li>
+            </ul>
+        
+            <h3>3. Purpose of Data Processing</h3>
+            <p>The personal data collected are processed for the following purposes:</p>
+            <ul>
+              <li>Order management and fulfillment;</li>
+              <li>Payment and financial transaction processing;</li>
+              <li>Sending communications related to the status of the order;</li>
+              <li>Customer support and problem resolution related to purchases;</li>
+              <li>Compliance with legal and regulatory obligations (e.g., invoicing);</li>
+              <li>Statistical analysis to improve our services and website;</li>
+              <li>Direct marketing (with explicit user consent), including promotional offers and newsletters.</li>
+            </ul>
+        
+            <h3>4. Data Retention</h3>
+            <p>Your personal data will be retained for as long as necessary to fulfill the purposes listed above, in accordance with applicable regulations. Order-related data will be kept for 10 years for tax and accounting purposes.</p>
+        
+            <h3>5. Data Sharing</h3>
+            <p>Your personal data may be shared with:</p>
+            <ul>
+              <li>Payment service providers and financial institutions for managing transactions;</li>
+              <li>Couriers and shipping services for order delivery;</li>
+              <li>Data analytics companies to improve navigation experience and optimize our marketing campaigns;</li>
+              <li>Legal entities or public authorities in compliance with legal obligations.</li>
+            </ul>
+        
+            <h3>6. User Rights</h3>
+            <p>In accordance with the GDPR, you have the right to:</p>
+            <ul>
+              <li>Access your personal data and request a copy of it;</li>
+              <li>Request correction of inaccurate data or the completion of incomplete data;</li>
+              <li>Request the deletion of personal data ("right to be forgotten");</li>
+              <li>Restrict the processing of personal data under the conditions set out in Article 18 of the GDPR;</li>
+              <li>Object to the processing of data for direct marketing purposes;</li>
+              <li>Request data portability to another data controller;</li>
+              <li>Lodge a complaint with the supervisory authority (the Data Protection Authority in your country).</li>
+            </ul>
+        
+            <h3>7. Data Security</h3>
+            <p>We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, destruction, loss, or accidental alteration. However, no online system can guarantee absolute security.</p>
+        
+            <h3>8. Changes to the Privacy Policy</h3>
+            <p>We reserve the right to make changes to this Privacy Policy at any time. The changes will be published on this page, so we encourage you to check it periodically.</p>
+        
+            <button class="close__modal">Chiudi</button>
+        </dialog>
+
+        <!--Terms of Us modal-->
+        <dialog class="modal" id="termOfUs">
+            <h2>Terms of Use</h2>
+            <p>These Terms of Use govern your access to and use of our e-commerce website. By using our services, you agree to comply with these terms. Please read them carefully before making any purchase or using any part of the website.</p>
+        
+            <h3>1. Acceptance of Terms</h3>
+            <p>By accessing our website, you acknowledge and agree to be bound by these Terms of Use, all applicable laws, and regulations. If you do not agree with any part of these terms, you are prohibited from using or accessing this site.</p>
+        
+            <h3>2. Use of the Website</h3>
+            <p>You are granted a non-exclusive, non-transferable, limited license to access and use the website for personal and non-commercial purposes. You agree not to:</p>
+            <ul>
+              <li>Reproduce, duplicate, copy, sell, or exploit any portion of the website without prior written permission;</li>
+              <li>Use the website in any manner that could damage, disable, overburden, or impair the website's functionality;</li>
+              <li>Attempt to gain unauthorized access to any part of the website, servers, or networks associated with it.</li>
+            </ul>
+        
+            <h3>3. Account and Registration</h3>
+            <p>To access certain features of the website, you may be required to register for an account. You agree to:</p>
+            <ul>
+              <li>Provide accurate and complete information during registration;</li>
+              <li>Keep your login credentials confidential and secure;</li>
+              <li>Notify us immediately of any unauthorized use of your account or any other security breach.</li>
+            </ul>
+        
+            <h3>4. Product Descriptions and Availability</h3>
+            <p>We strive to ensure that all product descriptions, images, and pricing are accurate. However, we do not warrant that product descriptions or other content are error-free. In case of inaccuracies, we reserve the right to correct any errors and to update information at any time without prior notice.</p>
+        
+            <h3>5. Payments and Billing</h3>
+            <p>All payments for products must be made using the payment methods provided at checkout. By making a purchase, you agree to provide valid payment information and authorize us to charge the total amount of your order.</p>
+        
+            <h3>6. Intellectual Property</h3>
+            <p>All content on the website, including text, graphics, logos, and images, is the intellectual property of Markommerce or its licensors. You agree not to use, copy, or distribute any content without our explicit permission.</p>
+        
+            <h3>7. Limitation of Liability</h3>
+            <p>In no event shall Markommerce be liable for any direct, indirect, incidental, or consequential damages arising from your use or inability to use the website or its content. This includes, but is not limited to, any errors, omissions, or inaccuracies on the site.</p>
+        
+            <h3>8. Governing Law</h3>
+            <p>These Terms of Use shall be governed by and construed in accordance with the laws of Italy, without regard to its conflict of law principles. Any disputes arising under these terms shall be subject to the exclusive jurisdiction of the courts in Italy.</p>
+        
+            <h3>9. Changes to the Terms</h3>
+            <p>We reserve the right to modify these Terms of Use at any time. The most current version will always be available on this page. Your continued use of the website after any changes are made signifies your acceptance of the updated terms.</p>
+        
+            <button class="close__modal">Close</button>
+        </dialog>
+
+          <!-- Modal dialog for FAQ -->
+        <dialog class="modal" id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+
+            <!-- FAQ Item 1 -->
+            <div class="faq__item">
+                <div class="faq__question">What payment methods are accepted?</div>
+                <div class="faq__answer">We accept credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers.</div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq__item">
+                <div class="faq__question">How can I track my order?</div>
+                <div class="faq__answer">After your order has been shipped, you will receive an email with the tracking information. You can also track the order in your account dashboard.</div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq__item">
+                <div class="faq__question">Can I return or exchange a product?</div>
+                <div class="faq__answer">Yes, you can return or exchange a product within 30 days of purchase, as long as it is in its original condition. Please visit our return policy page for more details.</div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq__item">
+                <div class="faq__question">Do you offer international shipping?</div>
+                <div class="faq__answer">Yes, we offer international shipping to most countries. Shipping costs and delivery times may vary depending on the destination.</div>
+            </div>
+
+            <!-- FAQ Item 6 -->
+            <div class="faq__item">
+                <div class="faq__question">How long does it take to receive my order?</div>
+                <div class="faq__answer">Delivery times depend on the shipping method chosen at checkout and your location. Typically, domestic orders are delivered within 3-7 business days, while international orders can take up to 14 business days.</div>
+            </div>
+        
+            <!-- FAQ Item 7 -->
+            <div class="faq__item">
+                <div class="faq__question">What happens if my order is damaged during shipping?</div>
+                <div class="faq__answer">If your order arrives damaged, please contact us immediately at support@example.com with your order number and photos of the damage. We will assist you in resolving the issue by offering a replacement or refund.</div>
+            </div>
+        
+            <!-- FAQ Item 8 -->
+            <div class="faq__item">
+                <div class="faq__question">Can I change or cancel my order after it has been placed?</div>
+                <div class="faq__answer">Once an order has been placed, we process it quickly. If you need to make changes or cancel it, please contact us as soon as possible. We will do our best to accommodate your request, but we cannot guarantee changes if the order has already been processed.</div>
+            </div>
+        
+            <!-- FAQ Item 9 -->
+            <div class="faq__item">
+                <div class="faq__question">Do you offer gift cards?</div>
+                <div class="faq__answer">Yes, we offer electronic gift cards in various denominations. These can be purchased on our website and sent to the recipient via email.</div>
+            </div>
+        
+            <!-- FAQ Item 10 -->
+            <div class="faq__item">
+                <div class="faq__question">Are your products eco-friendly?</div>
+                <div class="faq__answer">We are committed to sustainability. Many of our products are made from eco-friendly materials, and we strive to use minimal packaging. Please check the product description for specific details.</div>
+            </div>
+
+            <button class="close__modal">Close</button>
+        </dialog>
+    
+    </div>
+
+
+
+
+
+    <script type="module" src="main.js"></script>
+    <script type="module" src="./utils_script/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --lightgrey:#f4f4f6;
+    --darkblue:#232f3e;
+    --red600:#DB4444;
+    --fullPrize : #828288;
+    --importantText : #333;
+    --backgroundInput : #F4F4F6;
+}
+.loginContainer {
+    max-width: 400px;
+    margin: 0px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.loginContainer > h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+.loginContainer > h5 {
+    text-align: center;
+    color: #333;
+}
+.loginContainer > form {
+    margin-top: 20px;
+}
+.loginContainer > form > input[type="email"],
+.loginContainer > form > input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.loginContainer > form > button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--red600);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.loginContainer > p {
+    margin-top: 15px;
+    text-align: center;
+}
+.loginContainer > p > a {
+    color: var(--importantText);
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+@media (min-width:576px){
+    .loginContainer {
+        margin: 20px auto;
+    }
+
+}
+@media (min-width:768px){
+    .loginContainer > form > button:hover {
+        color: black;
+    }
+    .loginContainer > p > a:hover {
+        color:  var(--red600);
+    }
+}

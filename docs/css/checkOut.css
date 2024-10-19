@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'Paypal';
+    src: url('/docs/Fonts/Paypal.ttf') format('truetype');
+}
+  
+  :root{
+      --lightgrey:#E3E6E6;
+      --darkblue:#232f3e;
+      --red600:#DB4444;
+  }
+  
+  /* Contenitore principale */
+  .container__checkOut {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  .container__checkOut h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* billing style */
+  .billing__details {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  #billing__form > input{
+    font-size: 20px;
+  }
+  #billing__form label{
+    display: block;
+    margin-bottom: 5px;
+  }
+  #billing__form #save-info + label{
+    margin-bottom: 0;
+  }
+
+  /*input billing style */
+  #billing__form input[type="text"],
+  #billing__form input[type="tel"],
+  #billing__form input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /*checkbox billing style */
+  #billing__form .flexCheckbox {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  #billing__form input[type="checkbox"] {
+    margin-right: 5px;
+  }
+
+  /* summary style */
+  .order__summary {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+
+  /*summary style products */
+  .order__summary .checkOut__product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    word-break: break-all;
+    gap: 10px;
+    text-align: center;
+    border-bottom: 1px solid var(--darkblue);
+    padding-bottom: 10px;
+  }
+  .order__summary .checkOut__product > *{
+    width: 25%;
+  }
+  .order__summary .checkOut__product > div > img{
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+  .order__summary .checkOut__product > p{
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+  }
+
+  /* totals price style */
+  .order__summary .totals {
+    margin-bottom: 20px;
+  }
+  .order__summary .totals > div{
+    border:  1px solid var(--darkblue);
+    padding: 20px 10px;
+  }
+  .order__summary .totals > div > p{
+    display: flex;
+    justify-content: space-between;
+  }
+  .order__summary .totals > div >*:nth-child(2){
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--darkblue);
+  }
+  .order__summary .totals p {
+  margin-bottom: 5px;
+  }
+  
+  /* PayPal btn style */
+  .order__summary #paypal__button {
+    font-family: 'Paypal', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFc43a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .order__summary #paypal__button #pay{
+    color: #003087;
+  }
+  .order__summary #paypal__button #pal{
+    color: #026cff;
+  }
+  .order__summary #paypal__button:hover {
+    background-color: #001f5b;
+  }
+  
+  /*HR style*/
+  .order__summary .line {
+    text-align: center;
+  }
+  .order__summary .line::before, .line::after {
+    content: "";
+    display: inline-block;
+    width: 30%; 
+    height: 1px; 
+    background-color: var(--darkblue); 
+    vertical-align: middle;
+  } 
+  .order__summary .line span {
+    top: -50%; 
+    background-color: white; 
+    padding: 0 1em; /* text spacing */
+  }
+  
+  /*credit card style*/
+  .order__summary #creditCard__form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  } 
+  .order__summary #creditCard__form label {
+    display: block;
+    margin-bottom: 5px;
+  } 
+  .order__summary #creditCard__form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size:20px;
+  }  
+  .order__summary #creditCard__form > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+  .order__summary #creditCard__form > div > div{
+    width: 100%;
+  }
+
+  /*credit card style*/
+  #creditCard__form input[type="text"]{
+    text-align: center;
+    font-family: 'Font Awesome 5 Free';
+    color: black;
+    margin-bottom: 5px;
+  }
+  
+  /* order btn style*/
+  .order__summary .place__order{
+    display: none;
+  }
+  .place__order {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--red600);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }  
+  .place__order:hover {
+    color: black;
+  }
+
+  @media (min-width:700px){
+    .container__checkOut{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .billing__details,.order__summary {
+        width: 46%;
+    }
+    .order__summary {
+      margin-bottom: 0;
+    }
+    .order__summary .place__order{
+        display: block;
+    }
+    .billing__details .place__order{
+        display: none;
+    }
+
+    
+  }
+  @media (min-width:900px){
+    .checkOut__product > div > img{
+      width: 80px;
+      height: 80px;
+    }
+
+  }
+
+  @media (min-width:1024px){
+    .container__checkOut{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .billing__details,.order__summary {
+        width: 40%;
+    }
+    #creditCard__form > div{
+      flex-direction: row;
+    }
+    #creditCard__form > div > div{
+      width: 49%;
+    }
+  }
+

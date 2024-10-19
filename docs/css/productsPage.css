@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --lightgrey:#f4f4f6;
+    --darkblue:#232f3e;
+    --red600:#DB4444;
+    --fullPrize : #828288;
+    --importantText : #333;
+    --backgroundInput : #F4F4F6;
+}
+main{
+    max-width: none;
+}
+
+/*left asisde filter*/
+#subContainer #filter__aside{
+    display: none;
+}
+
+/*products container*/
+.container__productsPage{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products__item{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.product__image {
+    width: 120px;
+    height: 120px;
+}
+.product__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: var(--lightgrey);
+}
+.product__details {
+    background-color: #fff;
+    padding: 10px;
+    width: calc(100% - 130px);   
+}
+.product__details > *{
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    margin-bottom: 3px;
+}
+.product__details > * > .red600{
+    color: var(--red600);
+}
+.product__details > * > .normal{
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+#productsPage__addToCart{
+    display: none;
+}
+
+/*Not avaliable item*/
+#itemNotAvaliable{
+    width: 100%;
+    text-align: center;
+    display: none;
+    color: var(--importantText);
+    margin-bottom: 50px;
+}
+#itemNotAvaliable > *:nth-child(2){
+    margin: 10px 0 30px;
+}
+#itemNotAvaliable > a{
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+}
+
+/*placeholder effect products */
+.placeholder__products{
+    display: flex;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 100%;
+}
+.placeholder__products > *:first-child{
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+}
+.placeholder__products > *:first-child.animated-bg-text{ 
+    border-radius:0 ;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.placeholder__products > *:last-child{
+    padding: 10px;
+    width: calc(100% - 120px);
+}
+.placeholder__products > *:last-child > * {
+    margin-bottom: 7px;
+}
+
+/*downbar*/
+#downbar{
+    position: fixed;
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    left: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: all 0.3s ease;
+    border-top:1px solid black;
+    border-radius: 10px;
+    z-index: 11;
+}
+#downbar.show{
+    transform: translateY(0);
+    padding: 45px 15px 15px;
+}
+#subContainer{
+    position: relative;
+    padding-top: 50px;
+}
+#downbar #closeDownbar,#openDownbar{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    color: var(--importantText);
+}
+#downbar #closeDownbar i,#openDownbar i {
+    font-size: 25px;
+    margin-left: 5px;
+}
+#openDownbar{
+    top: 0px;
+}
+#downbar details{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#downbar summary{
+    margin:8px 0px 15px;
+    position: relative;
+}
+#downbar summary::marker{
+    position: absolute;
+}
+
+#downbar .downbar__filters{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#downbar .downbar__filters li{
+    font-size: 12px;
+    margin: 5px 10px 25px 0;
+}
+#downbar .downbar__filters li label{
+    background-color: var(--lightgrey);
+    padding: 10px;
+    border-radius: 10px;   
+}
+
+#downbar .downbar__filters li input{
+    display: none;
+}
+
+#downbar .downbar__filters li input:checked + label{
+    background-color: var(--red600);
+}
+@media (min-width: 768px) {
+    
+    .products__item{
+      flex-direction: column;
+      width: 200px;
+    }
+    .products__item> *{
+        width: 100%;
+    }
+    .product__image{
+        height: 200px;
+    }
+    #productsPage__addToCart{
+        display: block;
+        width: 100%;
+        font-size: 16px;
+        background-color: var(--red600);
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 10px 5px;
+        cursor: pointer;
+        color: #fff;
+    }
+    #productsPage__addToCart:hover{
+        color: black;
+    }
+
+    /*placeholder effect products */
+    .placeholder__products{
+        width: 200px;
+        text-align: center;
+        padding-bottom:20px;
+        flex-direction: column;
+    }
+    .placeholder__products > *:first-child{
+        width: 100%;
+        height: 160px;
+        margin-bottom: 10px;
+    }
+    .placeholder__products > *:first-child.animated-bg-text{ 
+        border-radius:0 ;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .placeholder__products > *:last-child{
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+    .placeholder__products > *:last-child > p{
+        width: 80%;
+        height: 13px;
+        margin-bottom: 10px;
+    }
+    .placeholder__products > * >div:last-child{
+        width: 90%;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    #subContainer{
+        display: flex;
+    }
+
+    /*downbar btn*/
+    #openDownbar{
+        display: none;
+    }
+    #itemNotAvaliable > a:hover{
+        cursor: pointer;
+        color: var(--red600);
+    }
+    
+    /*filter aside left*/
+    #subContainer #filter__aside{
+        /*min-width: 249px;*/
+        /*width: 300px;*/
+        background-color: #fff;
+        padding-right: 10px;
+        display: block;
+    }
+    #filter__aside details{
+        margin-bottom: 10px;
+        width: 250px;
+    }
+    #filter__aside summary{
+        margin-bottom: 8px;
+        font-weight: 700;
+    }
+    #filter__aside ul{
+        list-style: none;
+        padding-left:10px;
+    }
+
+    /*only placeholder on charging*/
+    #filter__aside ul .animated-bg{
+        width: 80%;
+        height: 17px;
+    }
+    #filter__aside ul li{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    #filter__aside ul li input[type="checkbox"],#filter__aside ul li label{
+        cursor: pointer;
+    }
+    #downbar{
+        display: none;
+    }
+}
+
+
+

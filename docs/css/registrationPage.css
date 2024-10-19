@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --lightgrey:#f4f4f6;
+    --darkblue:#232f3e;
+    --red600:#DB4444;
+    --fullPrize : #828288;
+    --importantText : #333;
+    --backgroundInput : #F4F4F6;
+}
+.registrationContainer {
+    max-width: 400px;
+    margin: 0px auto 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.registrationContainer > h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+.registrationContainer > h5 {
+    text-align: center;
+    color: #333;
+}
+
+/*registration form*/
+.registrationContainer > form {
+    margin-top: 20px;
+}
+.registrationContainer > form > input[type="text"],
+.registrationContainer > form > input[type="email"],
+.registrationContainer > form > input[type="password"] {
+    font-size: 20px;
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*create account btn*/
+.registrationContainer > form > button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--red600);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*login whit google btn*/
+.registrationContainer > .google-login {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.registrationContainer > .google-login > img {
+    width: 22px; 
+    height: auto;
+    margin-right: 10px; 
+}
+.registrationContainer > p {
+    margin-top: 15px;
+    color: var(--darkblue);
+    text-align: center;
+}
+.registrationContainer > p > a {
+    color: var(--importantText);
+    text-underline-offset: 5px
+}
+
+@media (min-width:576px){
+    .registrationContainer {
+        margin: 20px auto;
+    }
+}
+
+@media (min-width:768px){
+    .registrationContainer > form > button:hover {
+        color: black;
+    }
+    .registrationContainer > p > a:hover {
+        color: var(--red600);
+    }
+    .registrationContainer > .google-login:hover {
+        color: var(--red600);
+    }
+
+}
